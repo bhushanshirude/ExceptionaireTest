@@ -1,0 +1,39 @@
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">File Upload</h5>
+    <div>
+      <input type="file" class="form-control-file" accept=".png, .jpg, .jpeg" (change)="onFileSelected($event)"
+        (change)="readUrl($event)" (change)="handleUpload($event)">
+    </div>
+
+    <div class="slimbar-container">
+      <ng2-slim-loading-bar></ng2-slim-loading-bar>
+    </div>
+
+    <div class="priview" *ngIf="url">
+      <img [src]="url" height="250">
+    </div>
+
+    <div *ngIf="showMessage">
+      <p style="color:green">{{message}}</p>
+    </div>
+
+    <div class="row">
+      <button class="btn btn-success" (click)="onUpload()">Upload</button>
+      <form *ngIf="url">
+        <button type="rest" class="btn btn-danger">Delete</button>
+      </form>
+      <button class="btn btn-primary" (click)="view()">View</button>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div  class="col-md-4"  *ngFor="let data of images">
+      <div>
+        <img src="{{data.image_name}}">
+      </div>
+    </div>
+  </div>
+</div>

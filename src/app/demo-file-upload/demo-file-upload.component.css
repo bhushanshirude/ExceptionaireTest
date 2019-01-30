@@ -1,0 +1,82 @@
+ input[type="file"] {
+    display: block;
+    margin: 10px auto;
+    padding: 0px;
+}
+
+h4{
+    margin: 10px auto;
+    padding: 0px;
+    display: block;
+    text-align: center;
+}
+
+.btn-success {
+    color: #fff;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+    display: block;
+    margin: 10px auto;
+    padding: 10px 30px;
+}
+.btn-danger {
+    color: #fff;
+    background-color: #d9534f;
+    border-color: #d43f3a;
+    margin: 10px auto;
+    display: block;
+    padding: 10px 30px;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    margin: 10px auto;
+    display: block;
+    padding: 10px 30px;
+}
+
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    margin: 20px auto;
+}
+
+.priview img {
+    vertical-align: middle;
+    margin: 15px auto;
+    display: block;
+    padding: 0px;
+}
+
+input[type="file"][_ngcontent-c1] {
+    display: block;
+    margin: 10px auto;
+    padding: 5px;
+}
+
+.thumbnail img{
+    vertical-align: middle;
+    margin: 10px 10px;
+    display: block;
+    padding: 10px;
+    max-width: 100%;
+}
+img { 
+    max-width: 100%;
+    margin: 10px auto; 
+}
+.cart{
+    width: 50%;
+    margin: 0px auto;
+    padding: 0px;
+    display: block;
+}
+
+.card{
+    width: 40%;
+    margin: 10px auto;
+}
